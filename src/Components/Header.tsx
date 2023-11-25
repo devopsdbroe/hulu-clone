@@ -63,11 +63,11 @@ const Header = () => {
 					)}
 				</h2>
 				{toggle && (
-					<ul className="absolute bg-gray-700 w-[200px] text-center mt-3 right-0 left-0 mx-auto rounded-md px-3">
+					<ul className="absolute bg-gray-700 w-[200px] text-center mt-3 left-0 right-10 mx-auto rounded-md p-3">
 						{menu.map((item) => (
 							<li
 								key={item.id}
-								className="text-gray-400 text-[18px] font-medium cursor-pointer hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md transition-all duration-500 ease-in-out"
+								className="text-gray-400 text-[18px] font-medium cursor-pointer hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md transition-all duration-500 ease-in-out"
 							>
 								{item.name}
 							</li>
