@@ -7,4 +7,7 @@ const getPopularMovies = axios.get(
 	movieBaseURL + "/popular?api_key=" + api_key
 );
 
-export default { getPopularMovies };
+const getMovieByGenreId = (id: number) =>
+	axios.get(movieBaseURL + "&with_genres" + id);
+
+export default { getPopularMovies, getMovieByGenreId };

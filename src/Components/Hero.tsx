@@ -18,7 +18,7 @@ const Hero = () => {
 
 	return (
 		<div>
-			<div className="absolute h-[85vh] bg-gradient-to-t from-[#1e2126] via-transparent to-transparent w-full"></div>
+			<div className="absolute h-[85vh] bg-gradient-to-t from-[#1e2126] via-transparent to-transparent w-full" />
 			<div className="absolute mt-[400px] md:mt-[350px] px-10 md:px-24">
 				<h2 className="text-white text-[19px] lg:text-[27px]">
 					Watch only on Hulu

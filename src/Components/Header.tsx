@@ -41,7 +41,7 @@ const Header = () => {
 	];
 
 	return (
-		<div className="flex justify-between items-center py-4 px-10 absolute w-full bg-gradient-to-b from-[#1e2126] to-transparent">
+		<div className="flex z-30 justify-between items-center py-4 px-10 absolute w-full bg-gradient-to-b from-[#1e2126] to-transparent">
 			<img src={logo} alt="logo" className="w-[65px]" />
 			<ul className="hidden md:flex gap-8">
 				{menu.map((item) => (
