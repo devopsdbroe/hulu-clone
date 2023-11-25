@@ -9,7 +9,8 @@ const Hero = () => {
 		const getPopularMovies = () => {
 			GlobalApi.getPopularMovies.then((res: any) => {
 				const result = res.data.results;
-				setMovieList(result[0]);
+				const randomNumber = Math.floor(Math.random() * 10);
+				setMovieList(result[randomNumber]);
 			});
 		};
 

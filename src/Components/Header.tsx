@@ -47,7 +47,9 @@ const Header = () => {
 				{menu.map((item) => (
 					<li
 						key={item.id}
-						className="text-gray-400 text-[18px] font-medium cursor-pointer hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md transition-all duration-500 ease-in-out"
+						className={`text-gray-400 text-[18px] font-medium cursor-pointer hover:bg-gray-700 hover:text-white px-3 py-2 ${
+							item.id == 1 ? "bg-gray-700 text-white" : null
+						} rounded-md transition-all duration-500 ease-in-out`}
 					>
 						{item.name}
 					</li>

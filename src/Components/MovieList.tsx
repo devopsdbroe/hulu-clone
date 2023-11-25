@@ -30,7 +30,7 @@ const MovieList = ({ genreId }: any) => {
 		<div className="flex items-center">
 			<IoChevronBackOutline
 				onClick={() => slideLeft(elementRef.current)}
-				className="text-[40px] text-white bg-black p-2 z-10 cursor-pointer mb-[120px] rounded-full"
+				className="text-[40px] text-white bg-black p-2 z-10 cursor-pointer mb-[120px] rounded-full hidden md:block"
 			/>
 			<div
 				id="slider"
@@ -43,7 +43,7 @@ const MovieList = ({ genreId }: any) => {
 			</div>
 			<IoChevronForwardOutline
 				onClick={() => slideRight(elementRef.current)}
-				className="text-[40px] text-white bg-black p-2 z-10 cursor-pointer mb-[120px] rounded-full"
+				className="text-[40px] text-white bg-black p-2 z-10 cursor-pointer mb-[120px] rounded-full hidden md:block"
 			/>
 		</div>
 	);
